@@ -1,0 +1,79 @@
+.searchField {
+    height: 100vh;
+    width: 50%;
+    background-color: #3c4153;
+    overflow-y: scroll;
+}
+
+.searchField::-webkit-scrollbar {
+    width: 0;
+}
+
+.searchField input[type="text"] {
+    margin-top: 4em;
+    padding: 0.5em;
+    padding-left: 1.2em;
+    width: 17em;
+    height: 2em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    outline: none;
+    border: none;
+    font-family: monospace;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.searchField input[value="Search"] {
+    height: 3.2em;
+    padding: 0.5em;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+    border: none;
+    background-color: ghostwhite;
+}
+
+.searchField form  {
+    margin: 1em auto;
+    width: fit-content;
+}
+
+.searchField .wordContainer {
+    width: 85%;
+}
+
+.searchField .result {
+    list-style-type: none;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+.searchField .word{
+    margin-top: 0;
+}
+.searchField .word h1{
+    margin: 0.5em 0;
+} 
+
+.newGroup {
+    display: none ;
+}
+
+.wordSearch .btnSearch {
+    margin: auto;
+    margin-top: 3.5em;
+    width: 85%;
+}
+
+.searchField .result>ul li:hover {
+   color: deepskyblue;
+   cursor: pointer;
+}
+
+.searchField .listView {
+    width: 90%;
+}
+
+.searchField .listView .btnContainer {
+    margin-top: 0;
+}

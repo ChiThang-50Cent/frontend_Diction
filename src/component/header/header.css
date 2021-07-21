@@ -1,0 +1,37 @@
+.menu {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    height: 3.2em;
+    width: inherit;
+    position: fixed;
+    background-color: #323439;
+}
+
+.searchBox{
+    width: 35%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox input[type='text']  {
+    padding: 0.5em;
+    padding-left: 1.2em;
+    width: 25em;
+    height: 2em;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-family: monospace;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+

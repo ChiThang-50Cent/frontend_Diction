@@ -1,0 +1,6 @@
+.mainContainer {
+    height: 100vh;
+    width: calc(100vw - 15em);
+    background-color: #303545;
+    display: flex;
+}

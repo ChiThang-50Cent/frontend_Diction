@@ -1,0 +1,14 @@
+.mainGroup {
+    padding-top: 4em;
+    margin: auto;
+    width: 45%;
+    height: calc(100vh - 4em);
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}

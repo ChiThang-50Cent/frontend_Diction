@@ -1,0 +1,66 @@
+
+.sideInfo {
+    width: 20em;
+    height: 100vh;
+    color: #fafafa;
+    background-color: #323439;
+}
+
+.sideInfo .userInfo {
+    height: 12em;
+    display: flex;
+    align-items: center;
+    padding-left: 1.2em;
+}
+
+.userInfo img {
+    border-radius: 50%;
+    width: 20%;
+}
+
+.userInfo .nameEmail {
+    margin-left: 0.6em;
+}
+
+.sideInfo .groupContain {
+    height: calc(100vh - 17em);
+}
+
+.sideInfo .logOutbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logOutbtn button {
+    padding: 0.5em;
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: 800;
+    color: whitesmoke;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+.logOutbtn button:hover {
+    opacity: 0.7;
+    color: deepskyblue;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.list li a h3:hover{
+    color: deepskyblue;
+}
+
+.list li a:visited {
+    color: whitesmoke;
+}

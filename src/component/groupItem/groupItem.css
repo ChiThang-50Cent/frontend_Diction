@@ -1,0 +1,21 @@
+.groupItem {
+    height: 9em;
+    width: 90%;
+    margin: 4px auto;
+    border-radius: 10px;
+    background-color: #7b89c9;
+    padding: 0.5em;
+}
+
+.groupItem button {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    text-align: left;
+}
+
+.groupItem:hover {
+    opacity: 0.8;
+}
