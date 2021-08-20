@@ -1,0 +1,33 @@
+.managefile {
+    width: 50%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.managefile .noti{
+    margin-top: 4em;
+}
+
+.managefile .listfile {
+    height: calc(100vh - 8em );
+}
+
+.managefile .listfile ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+}
+
+.managefile .listfile ul>li, a{
+    color: rgb(206, 197, 197);
+    cursor: pointer;
+    list-style-type: none;
+    padding:8px;
+}
+.managefile .listfile ul>li>a:hover{
+    color: deepskyblue;
+}

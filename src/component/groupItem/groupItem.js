@@ -18,7 +18,7 @@ export default function GroupItem(props) {
         
         <div className="groupItem">
             {
-            ItemData.name==undefined?<p>Loading....</p>:<button onClick={GotoList}>
+            ItemData.name==undefined?<p>...</p>:<button onClick={GotoList}>
                 <div className="name">
                     <p><strong>{ItemData.name}</strong></p>
                 </div>

@@ -7,18 +7,6 @@ import { Link } from 'react-router-dom'
 
 export default function SideInfo() {
 
-    const [ListGroup, setListGroup] = useState([])
-    useEffect(() => {
-        const userId = localStorage.getItem('userId')
-        fetchAPI(`/getUserGroup/${userId}`)
-            .then(data => {
-                setListGroup(data)
-            })
-            .catch(err => {
-                console.log(err.message)
-            })
-    }, [])
-
     function createNew(){
         let name = document.getElementById('name').value
         let userId = localStorage.getItem('userId')
@@ -46,13 +34,13 @@ export default function SideInfo() {
                     <li>
                         <form onSubmit={createNew}>
                             <label>New Group</label><br />
-                            <input type="text" placeholder="name" required="true" id="name" />
+                            <input type="text" placeholder="name" required={true} id="name" />
                             <input type="submit" value="Create" />
                         </form>
                     </li>
-                    {ListGroup.length == 0 ? <></>
-                        : ListGroup.map(el => <li key={el.name}><Link to={`/group/${el._id}`}><h3>{el.name}</h3><hr /></Link></li>)
-                    }
+                    <li><Link to={`/`}><h4>Group</h4></Link></li><hr />
+                    <li><Link to={`/book`}><h4>Upload File</h4></Link></li><hr />
+                    <li><Link to={`/manage`}><h4>Manage File</h4></Link></li><hr />
                 </ul>
             </div>
             <div className="logOutbtn">

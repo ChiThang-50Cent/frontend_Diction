@@ -1,0 +1,25 @@
+.readFile {
+    width: 50%;
+    height: 100vh;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.readFile form {
+    margin: 4em auto 10px auto;
+    width: 90%;
+    color: ghostwhite;
+    text-align: center;
+}
+
+.readFile form input {
+    margin-right: 5px;
+}
+
+.readFile .frame {
+    text-align: center;
+    height: calc(100vh - 6em);
+}

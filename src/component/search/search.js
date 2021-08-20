@@ -84,7 +84,7 @@ export default function Search() {
         <div className="searchField">
             <div>
                 <form onSubmit={submit}>
-                    <input type="text" placeholder="Search" name='search' required='true' />
+                    <input type="text" placeholder="Search" name='search' required={true} />
                     <input type="submit" value="Search" />
                 </form>
             </div>

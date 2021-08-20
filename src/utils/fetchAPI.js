@@ -1,12 +1,13 @@
-export default async function fetchAPI(path, method, data){
+export default async function fetchAPI(path, method="GET", data){
     const url = "http://localhost:5000"+path
     const result = await fetch(url, {
-        method : method || "GET",
+        method,
         headers : {
             'Content-Type' : "application/json",
-            'authorziation' : localStorage.getItem('token') || ''
+            'authorziation' : localStorage.getItem('token') || '',
+            "Access-Control-Allow-Origin": "*",
         },
-        body : JSON.stringify(data)
+        body : data ? JSON.stringify(data) : null
     })
     return result.json()
 }
